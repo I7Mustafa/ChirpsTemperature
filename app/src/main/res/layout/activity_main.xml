@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/back"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/IMT"
+        android:layout_width="wrap_content"
+        android:layout_height="173dp"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        app:srcCompat="@drawable/thermometer" />
+
+    <TextView
+        android:id="@+id/tvinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:text="@string/information" />
+
+
+    <EditText
+        android:id="@+id/numberOF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="8dp"
+        android:layout_margin="8dp"
+        android:hint="@string/number_of_chirps_in_25_seconds"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/btnct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="8dp"
+        android:layout_margin="8dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/calculate_temperature"
+        android:textAllCaps="true"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/tvRsult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="16dp"/>
+
+</LinearLayout>
